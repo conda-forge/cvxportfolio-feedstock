@@ -1,5 +1,5 @@
 {% set name = "cvxportfolio" %}
-{% set version = "0.0.12" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +9,7 @@ source:
   # no sdist provided, no tags on github
   # see https://github.com/cvxgrp/cvxportfolio/issues/67
   url: https://pypi.io/packages/py3/c/{{ name }}/{{ name }}-{{ version }}-py3-none-any.whl
-  sha256: 4079964dcc755612a9688232710e9dd94c6bcb9929b3bc56098bc0323fbcdb5d
+  sha256: b91d23920695853c765b0ed88c03399968676c454be352414bf8a45e972324fd
 
 build:
   number: 0
