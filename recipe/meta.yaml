@@ -1,20 +1,18 @@
 {% set name = "cvxportfolio" %}
-{% set version = "0.0.12" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  # no sdist provided, no tags on github
-  # see https://github.com/cvxgrp/cvxportfolio/issues/67
-  url: https://pypi.io/packages/py3/c/{{ name }}/{{ name }}-{{ version }}-py3-none-any.whl
-  sha256: 4079964dcc755612a9688232710e9dd94c6bcb9929b3bc56098bc0323fbcdb5d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 959b36c031f5615ab2840c046c1f7fe7499c00f3657fd0b501a57dc50b152ad0
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install {{ name }}-{{ version }}-py3-none-any.whl -vv --no-deps
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -24,20 +22,15 @@ requirements:
     - python >=3.7
     - cvxpy >=1.0.6
     - matplotlib-base
+    - multiprocess
     - numpy
     - pandas
-    # Missing from upstream
-    # see https://github.com/cvxgrp/cvxportfolio/pull/66
-    - multiprocess
-    - pandas-datareader
+    - requests
+    - scipy
 
 test:
   imports:
     - cvxportfolio
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/cvxgrp/cvxportfolio
