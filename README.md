@@ -3,11 +3,11 @@ About cvxportfolio-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cvxportfolio-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/cvxgrp/cvxportfolio
+Home: https://cvxportfolio.readthedocs.io
 
 Package license: Apache-2.0
 
-Summary: Portfolio optimization and simulation in Python
+Summary: Portfolio optimization and back-testing
 
 Development: https://github.com/cvxgrp/cvxportfolio
 
