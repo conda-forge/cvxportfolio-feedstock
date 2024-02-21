@@ -1,5 +1,5 @@
 {% set name = "cvxportfolio" %}
-{% set version = "1.1.1" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4bf1b5894b09cadfe964b25b80d3f1db744277544faa5c5c54b378cb873390be
+  sha256: 697f1dfb38e1e618345bcb48a484114265e20fe235302cc3eb93898327d7ab39
 
 build:
   number: 0
