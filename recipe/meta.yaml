@@ -31,10 +31,8 @@ requirements:
 test:
   imports:
     - cvxportfolio
-  requires:
-    - pip
   commands:
-    - pip check
+    - python -m cvxportfolio.tests
 
 about:
   home: https://cvxportfolio.readthedocs.io
