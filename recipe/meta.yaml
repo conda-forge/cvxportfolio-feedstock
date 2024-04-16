@@ -30,6 +30,10 @@ requirements:
 test:
   imports:
     - cvxportfolio
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://cvxportfolio.readthedocs.io
