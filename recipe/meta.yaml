@@ -26,6 +26,7 @@ requirements:
     - numpy
     - pandas
     - requests
+    - scs
 
 test:
   imports:
