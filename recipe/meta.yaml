@@ -23,7 +23,6 @@ requirements:
     - python >=3.7
     - cvxpy
     - matplotlib-base
-    - multiprocess
     - numpy
     - pandas
     - requests
@@ -37,8 +36,8 @@ test:
 
 about:
   home: https://cvxportfolio.readthedocs.io
-  license: Apache-2.0
-  license_family: Apache
+  license: GPL-3.0-or-later
+  license_family: GPL3
   license_file: LICENSE
   summary: Portfolio optimization and back-testing
   dev_url: https://github.com/cvxgrp/cvxportfolio
