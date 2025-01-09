@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cvxportfolio-fe
 
 Home: https://cvxportfolio.readthedocs.io
 
-Package license: Apache-2.0
+Package license: GPL-3.0-or-later
 
 Summary: Portfolio optimization and back-testing
 
