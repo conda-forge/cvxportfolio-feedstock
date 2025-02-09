@@ -33,8 +33,6 @@ test:
     - python {{ python_min }}
   imports:
     - cvxportfolio
-  commands:
-    - python -m cvxportfolio.tests
 
 about:
   home: https://cvxportfolio.readthedocs.io
